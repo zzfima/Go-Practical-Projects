@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main4() {
 	numbers := []int{1}
 	fmt.Println(safeSecondToLast(numbers))
 }
