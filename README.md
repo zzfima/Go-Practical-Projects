@@ -12,6 +12,8 @@ In VSCode terminal type (instead of test_code you can type anything): go mod ini
 
 Check what go tools installed: Ctrl Shift P-> Go: Locate Configured Go tools
 
+Install / update tools: Ctrl Shift P-> Go: Install/Update tools. Select all. After successfully update see message: All tools successfully installed. You are ready to Go. :)
+
 Build: go build .
 
 Run: go run .
