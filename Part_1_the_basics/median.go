@@ -12,16 +12,17 @@ func main() {
 
 func median(numbers []int) {
 	fmt.Println("Calculate median of array", numbers)
-	sort.Ints(numbers)
-
 	numbersLength := len(numbers)
-	var medianValue = 0.0
+	numbersSorted := make([]int, numbersLength)
+	copy(numbersSorted, numbers)
+	sort.Ints(numbersSorted)
 
+	var medianValue = 0.0
 	if numbersLength%2 != 0 {
-		medianValue = float64(numbers[numbersLength/2])
+		medianValue = float64(numbersSorted[numbersLength/2])
 	} else {
 		i := int(numbersLength / 2)
-		medianValue = float64(numbers[i-1]+numbers[i]) / 2
+		medianValue = float64(numbersSorted[i-1]+numbersSorted[i]) / 2
 	}
 
 	fmt.Println("Median is", medianValue)
