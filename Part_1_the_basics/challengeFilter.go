@@ -16,17 +16,11 @@ func filter(pred func(int) bool, values []int) []int {
 }
 
 func isOdd(num int) bool {
-	if num%2 != 0 {
-		return true
-	}
-	return false
+	return num%2 != 0
 }
 
 func isEven(num int) bool {
-	if num%2 == 0 {
-		return true
-	}
-	return false
+	return !isOdd(num)
 }
 
 func main() {
