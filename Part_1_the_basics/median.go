@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-func main() {
+func main2() {
 	median([]int{5, 2, 8, 4, 9, 11, 7})
 	median([]int{5, 2, 8, 4, 9, 11})
 
