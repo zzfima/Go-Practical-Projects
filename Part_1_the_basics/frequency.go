@@ -35,4 +35,8 @@ func showWordsFrequency(txt []string) {
 	for i, v := range wordsMap {
 		fmt.Println(i, v)
 	}
+
+	//check if value in map using comma
+	frq, ok := wordsMap["same1"]
+	fmt.Println(frq, ok)
 }
