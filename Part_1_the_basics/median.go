@@ -15,12 +15,14 @@ func median(numbers []int) {
 	sort.Ints(numbers)
 
 	numbersLength := len(numbers)
-	var medianIndex = 0
-	if numbersLength%2 == 0 {
-		medianIndex = numbersLength/2 - 1
+	var medianValue = 0.0
+
+	if numbersLength%2 != 0 {
+		medianValue = float64(numbers[numbersLength/2])
 	} else {
-		medianIndex = numbersLength / 2
+		i := int(numbersLength / 2)
+		medianValue = float64(numbers[i-1]+numbers[i]) / 2
 	}
 
-	fmt.Println("Median is", numbers[medianIndex])
+	fmt.Println("Median is", medianValue)
 }
