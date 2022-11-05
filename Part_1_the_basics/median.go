@@ -8,6 +8,15 @@ import (
 func main() {
 	median([]int{5, 2, 8, 4, 9, 11, 7})
 	median([]int{5, 2, 8, 4, 9, 11})
+
+	a1 := []int{5, 2, 8, 4, 9, 11}
+
+	f1(a1)
+	fmt.Println(a1)
+}
+
+func f1(a []int) {
+	sort.Ints(a)
 }
 
 func median(numbers []int) {
