@@ -8,7 +8,7 @@ func main() {
 	fmt.Println(numbers)
 
 	s := sum(numbers)
-	fmt.Println("Mean is ", s/len(numbers))
+	fmt.Println("Mean is ", float64(s)/float64(len(numbers)))
 }
 
 func sum(numbers []int) int {
