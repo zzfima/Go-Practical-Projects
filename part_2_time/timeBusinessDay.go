@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func main() {
+func main1() {
 	fmt.Println("today is business day?", isBusinessDay(time.Now()))
 	fmt.Println("Today is 2.11.2022. next business day:", nextBusinessDay(time.Date(2022, 11, 2, 11, 11, 11, 11, time.Now().Location())))
 	fmt.Println("Today is 3.11.2022. next business day:", nextBusinessDay(time.Date(2022, 11, 3, 11, 11, 11, 11, time.Now().Location())))
