@@ -23,7 +23,7 @@ func isEven(num int) bool {
 	return !isOdd(num)
 }
 
-func main() {
+func main5() {
 	fmt.Println("Filter challenge")
 	values := []int{1, 2, 3, 4, 5, 6, 7, 8}
 	fmt.Println("Odd values:", filter(isOdd, values))
