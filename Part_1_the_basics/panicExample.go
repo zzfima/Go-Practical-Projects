@@ -11,7 +11,7 @@ func safeSecondToLast(arr []int) (i int, err error) {
 	defer func() {
 		e := recover()
 		if e != nil {
-			err = fmt.Errorf(" %v", e)
+			err = fmt.Errorf("%v", e)
 		}
 	}()
 
